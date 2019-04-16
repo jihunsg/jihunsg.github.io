@@ -1,0 +1,60 @@
+<!doctype html><!-- MovieSelect.html-->
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport"content="width=device-width,initial-scale=1"/>
+<title>폼 학습</title></head>
+
+  <script>
+  function movie(Year)
+  {
+  var target = document.getElementById("namex");
+  var N_1000 = ["--------------------------------선택--------------------------------", "1. 명량 (개봉 2014년 누적 1761만명)", "2. 극한직업(개봉 2019년 누적 1626만명)", "3. 신과함께-죄와 벌(개봉 2017년 누적 1441만명)","4. 국제시장(개봉 2014년 누적 1426만명)","5. 아바타(개봉 2009년 누적 1348만명)", "6. 베테랑(개봉2015년 누적 1341만명)","7. 도둑들(개봉 2012년 누적 1298만명)","8. 7번방의 선물(개봉 2013년 누적 1281만명)", "9. 암살(개봉 2015년 누적 1270만명)", "10. 광해, 왕이 된 남자(개봉 2012년 누적 1232만명)"];
+  
+  var N_2018 = ["------------------------선택------------------------", "1. 신과함께-인과 연(1000만 영화)", "2. 어벤져스: 인피니티 워(1000만 영화)", "3. 보헤미안 랩소디", "4. 미션임파서블: 폴아웃", "5. 쥬라기월드: 폴른 킹덤", "6. 앤트맨과 와스프", "7. 안시성", "8. 플랙 팬서", "9. 완벽한 타인", "10. 독전"];
+  
+  var N_2017 = ["------------------------선택------------------------", "1. 신과함께-죄와 벌(1000만 영화)", "2. 택시운전사(1000만 영화)", "3. 공조", "4. 스파이더맨 홈커밍", "5. 1987", "6. 범죄도시", "7. 군함도", "8. 청년경찰", "9. 더킹", "10. 미녀와야수"];
+  
+  var N_2016 = ["------------------------선택------------------------", "1. 부산행(1000만 영화)","2. 검사외전", "3. 캡틴아메리카 시빌 워", "4. 밀정", "5. 마스터", "6. 터널", "7. 인천상륙작전", "8. 럭키", "9. 곡성", "10. 덕혜옹주"];
+  
+ 
+  if(Year.value == "1000")
+  	var k = N_1000;
+ 
+  else if (Year.value == "2018")
+  	var k = N_2018;
+  else if (Year.value == "2017")
+  	var k = N_2017;
+  else if (Year.value == "2016")
+  	var k = N_2016; 
+   target.options.length = 0;
+   
+
+  for (a in k) {
+    var opt = document.createElement("option");
+   
+   	opt.innerHTML = k[a];
+    target.appendChild(opt);
+    }
+  }
+  
+  </script>
+  <body>
+  <section>
+  <fieldset>
+  <legend>영화 선택</legend>
+  <label for="moviex">년도 </label>
+  <select id="moviex" name="movie" onchange="movie(this)">
+   <option selected>년도를 고르세요</option>
+  <option value="1000">1000만영화</option>
+  <option value="2018">2018년</option>
+  <option value="2017">2017년</option>
+  <option value="2016">2016년</option>
+  </select>
+  <label for="namex">영화</label>
+  <select id="namex" name="name">
+ </select>
+  </fieldset>
+</section>
+</body>
+</html>
