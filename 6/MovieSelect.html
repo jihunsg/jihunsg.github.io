@@ -3,9 +3,13 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport"content="width=device-width,initial-scale=1"/>
-<title>폼 학습</title>
+<title>영화 선택</title>
 </head>
-
+<body>
+  <section>
+  <fieldset>
+  <legend>영화 선택</legend>
+    
   <script>
   function movie(Year)
   {
@@ -40,10 +44,7 @@
   }
   
   </script>
-  <body>
-  <section>
-  <fieldset>
-  <legend>영화 선택</legend>
+
   <label for="moviex">년도 </label>
   <select id="moviex" name="movie" onchange="movie(this)">
    <option selected>년도를 고르세요</option>
