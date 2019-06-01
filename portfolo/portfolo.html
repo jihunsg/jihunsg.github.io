@@ -1,0 +1,537 @@
+<!doctype html><!-- memb6.html-->
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport"content="width=device-width,initial-scale=1"/>
+<style> 
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+*{box-sizing:border-box; padding:0; margin:0;  height:100%; width:100%;}
+body{
+background-color:#EEEEEE;
+}
+header{
+  
+  color:white;
+  background-color:#000000;
+  padding:20px; 
+  height:100px; 
+  text-align:center; 
+  font-family: 'Jeju Gothic', sans-serif;
+  font-weight:700;
+  opacity: 0.8;
+  }
+.contents {
+  float: left; 
+  height: 53px; 
+  width: 25%; 
+  text-align:center;
+  font-size:200%;
+  font-weight:900;
+  font-family:sans-serif;
+  }
+.contents h3{
+  cursor:pointer;
+  color:gray;
+
+}
+.contents :hover{
+ background-color:lightgray;
+  }
+.contents h3 ul{
+  background-color:lightgray;
+  padding:10px;
+  height:auto;
+  display:none;
+}
+.contents h3 ul li{
+  list-style:none;
+  font-size:60%;
+  text-decoration:none;
+  color:black;
+  border-radius:15px;
+}
+.contents a{
+  text-decoration:none;
+}
+.contents h3:hover ul{
+  background-color:gray;
+  display:block;
+  
+}
+.contents ul:hover{
+  background-color:lightgray;
+}
+.HTML{
+  padding-top:80px;
+  padding-left:30px
+}
+.HTML ul{
+  list-style:none;
+  height:auto;
+  width:100px;
+  color:gray;
+  font-size:150%;
+  text-decoration:none;
+  background-color:lightgray;
+  text-align:center;
+  line-height:200%;
+}
+.HTML ul li a{
+  list-style:none;
+  text-decoration:none;
+  color:gray;
+  background-color:lightgray;
+  padding:3px;
+  float:left;
+}
+.HTML ul li a:hover{
+  background-color:gray;
+  color:black;
+}
+.div1{
+ height:auto;
+ width:70%;
+ border:3px solid lightgray;
+ position:absolute;
+ left:200px;
+ top:180px;
+}
+
+.div1 ul li{
+  padding-left:30px;
+  font-size:140%;
+}
+
+</style> 
+
+
+<script language="javascript">
+ function ViewLayer1(){
+  document.getElementById("div_1").style.display='block';
+  document.getElementById("div_2").style.display='none';
+  document.getElementById("div_3").style.display='none';
+  document.getElementById("div_4").style.display='none';
+  document.getElementById("div_5").style.display='none';
+  document.getElementById("div_6").style.display='none';
+  document.getElementById("div_7").style.display='none';
+  document.getElementById("div_8").style.display='none';
+  document.getElementById("div_9").style.display='none';
+  document.getElementById("div_10").style.display='none';
+  document.getElementById("div_11").style.display='none';
+  document.getElementById("div_12").style.display='none';
+  document.getElementById("div_13").style.display='none';
+}
+ function ViewLayer2(){
+  document.getElementById("div_1").style.display='none';
+  document.getElementById("div_2").style.display='block';
+  document.getElementById("div_3").style.display='none';
+  document.getElementById("div_4").style.display='none';
+  document.getElementById("div_5").style.display='none';
+  document.getElementById("div_6").style.display='none';
+  document.getElementById("div_7").style.display='none';
+  document.getElementById("div_8").style.display='none';
+  document.getElementById("div_9").style.display='none';
+  document.getElementById("div_10").style.display='none';
+  document.getElementById("div_11").style.display='none';
+  document.getElementById("div_12").style.display='none';
+  document.getElementById("div_13").style.display='none';
+}
+ function ViewLayer3(){
+  document.getElementById("div_3").style.display='block';
+  document.getElementById("div_2").style.display='none';
+  document.getElementById("div_1").style.display='none';
+  document.getElementById("div_4").style.display='none';
+  document.getElementById("div_5").style.display='none';
+  document.getElementById("div_6").style.display='none';
+  document.getElementById("div_7").style.display='none';
+  document.getElementById("div_8").style.display='none';
+  document.getElementById("div_9").style.display='none';
+  document.getElementById("div_10").style.display='none';
+  document.getElementById("div_11").style.display='none';
+  document.getElementById("div_12").style.display='none';
+  document.getElementById("div_13").style.display='none';
+}
+ function ViewLayer4(){
+  document.getElementById("div_4").style.display='block';
+  document.getElementById("div_2").style.display='none';
+  document.getElementById("div_3").style.display='none';
+  document.getElementById("div_1").style.display='none';
+  document.getElementById("div_5").style.display='none';
+  document.getElementById("div_6").style.display='none';
+  document.getElementById("div_7").style.display='none';
+  document.getElementById("div_8").style.display='none';
+  document.getElementById("div_9").style.display='none';
+  document.getElementById("div_10").style.display='none';
+  document.getElementById("div_11").style.display='none';
+  document.getElementById("div_12").style.display='none';
+  document.getElementById("div_13").style.display='none';
+}
+ function ViewLayer5(){
+  document.getElementById("div_5").style.display='block';
+  document.getElementById("div_2").style.display='none';
+  document.getElementById("div_3").style.display='none';
+  document.getElementById("div_4").style.display='none';
+  document.getElementById("div_1").style.display='none';
+  document.getElementById("div_6").style.display='none';
+  document.getElementById("div_7").style.display='none';
+  document.getElementById("div_8").style.display='none';
+  document.getElementById("div_9").style.display='none';
+  document.getElementById("div_10").style.display='none';
+  document.getElementById("div_11").style.display='none';
+  document.getElementById("div_12").style.display='none';
+  document.getElementById("div_13").style.display='none';
+}
+ function ViewLayer6(){
+  document.getElementById("div_6").style.display='block';
+  document.getElementById("div_2").style.display='none';
+  document.getElementById("div_3").style.display='none';
+  document.getElementById("div_4").style.display='none';
+  document.getElementById("div_5").style.display='none';
+  document.getElementById("div_1").style.display='none';
+  document.getElementById("div_7").style.display='none';
+  document.getElementById("div_8").style.display='none';
+  document.getElementById("div_9").style.display='none';
+  document.getElementById("div_10").style.display='none';
+  document.getElementById("div_11").style.display='none';
+  document.getElementById("div_12").style.display='none';
+  document.getElementById("div_13").style.display='none';
+}
+ function ViewLayer7(){
+  document.getElementById("div_7").style.display='block';
+  document.getElementById("div_2").style.display='none';
+  document.getElementById("div_3").style.display='none';
+  document.getElementById("div_4").style.display='none';
+  document.getElementById("div_5").style.display='none';
+  document.getElementById("div_6").style.display='none';
+  document.getElementById("div_1").style.display='none';
+  document.getElementById("div_8").style.display='none';
+  document.getElementById("div_9").style.display='none';
+  document.getElementById("div_10").style.display='none';
+  document.getElementById("div_11").style.display='none';
+  document.getElementById("div_12").style.display='none';
+  document.getElementById("div_13").style.display='none';
+}
+ function ViewLayer8(){
+  document.getElementById("div_8").style.display='block';
+  document.getElementById("div_2").style.display='none';
+  document.getElementById("div_3").style.display='none';
+  document.getElementById("div_4").style.display='none';
+  document.getElementById("div_5").style.display='none';
+  document.getElementById("div_6").style.display='none';
+  document.getElementById("div_7").style.display='none';
+  document.getElementById("div_1").style.display='none';
+  document.getElementById("div_9").style.display='none';
+  document.getElementById("div_10").style.display='none';
+  document.getElementById("div_11").style.display='none';
+  document.getElementById("div_12").style.display='none';
+  document.getElementById("div_13").style.display='none';
+}
+ function ViewLayer9(){
+  document.getElementById("div_9").style.display='block';
+  document.getElementById("div_2").style.display='none';
+  document.getElementById("div_3").style.display='none';
+  document.getElementById("div_4").style.display='none';
+  document.getElementById("div_5").style.display='none';
+  document.getElementById("div_6").style.display='none';
+  document.getElementById("div_7").style.display='none';
+  document.getElementById("div_8").style.display='none';
+  document.getElementById("div_1").style.display='none';
+  document.getElementById("div_10").style.display='none';
+  document.getElementById("div_11").style.display='none';
+  document.getElementById("div_12").style.display='none';
+  document.getElementById("div_13").style.display='none';
+}
+ function ViewLayer10(){
+  document.getElementById("div_10").style.display='block';
+  document.getElementById("div_2").style.display='none';
+  document.getElementById("div_3").style.display='none';
+  document.getElementById("div_4").style.display='none';
+  document.getElementById("div_5").style.display='none';
+  document.getElementById("div_6").style.display='none';
+  document.getElementById("div_7").style.display='none';
+  document.getElementById("div_8").style.display='none';
+  document.getElementById("div_9").style.display='none';
+  document.getElementById("div_1").style.display='none';
+  document.getElementById("div_11").style.display='none';
+  document.getElementById("div_12").style.display='none';
+  document.getElementById("div_13").style.display='none';
+}
+ function ViewLayer11(){
+  document.getElementById("div_11").style.display='block';
+  document.getElementById("div_2").style.display='none';
+  document.getElementById("div_3").style.display='none';
+  document.getElementById("div_4").style.display='none';
+  document.getElementById("div_5").style.display='none';
+  document.getElementById("div_6").style.display='none';
+  document.getElementById("div_7").style.display='none';
+  document.getElementById("div_8").style.display='none';
+  document.getElementById("div_9").style.display='none';
+  document.getElementById("div_10").style.display='none';
+  document.getElementById("div_1").style.display='none';
+  document.getElementById("div_12").style.display='none';
+  document.getElementById("div_13").style.display='none';
+}
+ function ViewLayer12(){
+  document.getElementById("div_12").style.display='block';
+  document.getElementById("div_2").style.display='none';
+  document.getElementById("div_3").style.display='none';
+  document.getElementById("div_4").style.display='none';
+  document.getElementById("div_5").style.display='none';
+  document.getElementById("div_6").style.display='none';
+  document.getElementById("div_7").style.display='none';
+  document.getElementById("div_8").style.display='none';
+  document.getElementById("div_9").style.display='none';
+  document.getElementById("div_10").style.display='none';
+  document.getElementById("div_11").style.display='none';
+  document.getElementById("div_1").style.display='none';
+  document.getElementById("div_13").style.display='none';
+}
+ function ViewLayer13(){
+  document.getElementById("div_13").style.display='block';
+  document.getElementById("div_2").style.display='none';
+  document.getElementById("div_3").style.display='none';
+  document.getElementById("div_4").style.display='none';
+  document.getElementById("div_5").style.display='none';
+  document.getElementById("div_6").style.display='none';
+  document.getElementById("div_7").style.display='none';
+  document.getElementById("div_8").style.display='none';
+  document.getElementById("div_9").style.display='none';
+  document.getElementById("div_10").style.display='none';
+  document.getElementById("div_11").style.display='none';
+  document.getElementById("div_12").style.display='none';
+  document.getElementById("div_1").style.display='none';
+}
+
+function ViewLayer(){
+  document.getElementById("HTML").style.display='block';
+  
+}
+</script>
+
+<title> portfolio</title></head>
+<body>
+
+<header style="font-size:400%;">
+김지훈
+</header>
+
+ <div class="contents">
+ <a href="https://jihunsg.github.io/portfolo/portfolo">
+    <h3>HOME</h3>
+ </a>
+</div>
+ <div style="position:relative; z-index:1;" class="contents">
+    <h3>실습 
+      <ul>
+        <li onclick="javascript:ViewLayer();">HTML</li>
+        <li>C++</li>
+        <li>JAVA</li>
+      </ul>
+    </h3>
+</div>
+  <div style="position:relative; z-index:1;" class="contents">
+    <h3>실습 
+      <ul>
+        <li>HTML</li>
+        <li>C++</li>
+        <li>JAVA</li>
+      </ul>
+    </h3>
+</div>
+  <div style="position:relative; z-index:1;" class="contents">
+    <h3>실습 
+      <ul >
+        <li>HTML</li>
+        <li>C++</li>
+        <li>JAVA</li>
+      </ul>
+    </h3>
+</div>
+
+<div id="HTML" style="display:none;" class="HTML">
+ <ul>
+   <li><a onclick="javascript:ViewLayer1();" href="#">1주차</a></li>
+   <li><a onclick="javascript:ViewLayer2()" href="#">2주차</a></li>
+   <li><a onclick="javascript:ViewLayer3()" href="#">3주차</a></li>
+   <li><a onclick="javascript:ViewLayer4()" href="#">4주차</a></li>
+   <li><a onclick="javascript:ViewLayer5()" href="#">5주차</a></li>
+   <li><a onclick="javascript:ViewLayer6()" href="#">6주차</a></li>
+   <li><a onclick="javascript:ViewLayer7()" href="#">7주차</a></li>
+   <li><a onclick="javascript:ViewLayer8()" href="#">----</a></li>
+   <li><a onclick="javascript:ViewLayer9()" href="#">9주차</a></li>
+   <li><a onclick="javascript:ViewLayer10()" href="#">10주차</a></li>
+   <li><a onclick="javascript:ViewLayer11()" href="#">11주차</a></li>
+   <li><a onclick="javascript:ViewLayer12()" href="#">12주차</a></li>
+   <li><a onclick="javascript:ViewLayer13()" href="#">13주차</a></li>
+   
+ 
+ </ul>
+</div>
+
+<div class="div1" id="div_1" style="display:none;">
+  <ul type="none">    
+    <li><a href="https://jihunsg.github.io/1/index0.html"target="_blank">1.자바스크립트 환영</a></li>
+    <li><a href="https://jihunsg.github.io/1/2019030701.html"target="_blank">2.공공데이터포털 링크</a></li>
+  </ul>
+  
+  </div>
+<div class="div1" id="div_2" style="display:none;">
+  <ul type="none">    
+   <li><a href="https://jihunsg.github.io/2/globalEvent.html" target="_blank">1. 클릭 이벤트</a></li>
+<li><a href="https://jihunsg.github.io/2/basicHtml.html" target="_blank">2. basichtml</a></li>
+<li><a href="https://jihunsg.github.io/2/globalAttr.html" target="_blank">3. 애국가1 </a></li>
+<li><a href="https://jihunsg.github.io/2/koreaAnthem.html" target="_blank">4. 애국가2 </a></li>
+  </ul>
+
+</div>
+<div class="div1" id="div_3" style="display:none;">
+<ul type="none">
+<li><a href="https://jihunsg.github.io/3/basicChar.html" target="_blank">1.basicChar</a></li>
+<li><a href="https://jihunsg.github.io/3/bodyBasic.html" target="_blank">2.bodyBasic</a></li>
+<li><a href="https://jihunsg.github.io/3/basicHeading.html" target="_blank">3.basicHeading</a></li>
+<li><a href="https://jihunsg.github.io/3/basicPBrHr.html" target="_blank">4.basicPBrHr</a></li>
+<li><a href="https://jihunsg.github.io/3/headBasic.html" target="_blank">5.애국가 효과</a></li>
+<li><a href="https://jihunsg.github.io/3/koreaAnthem3.html" target="_blank">6.애국가3</a></li>
+<li><a href="https://jihunsg.github.io/3/koreaAnthem4.html" target="_blank">7.애국가4</a></li>
+<li><a href="https://jihunsg.github.io/3/basicTable.html" target="_blank">8.basicTable</a></li>
+<li><a href="https://jihunsg.github.io/3/advTable.html" target="_blank">9.advTable</a></li>
+<li><a href="https://jihunsg.github.io/3/advTable1.html" target="_blank">10.advTable1</a></li>
+<li><a href="https://jihunsg.github.io/3/basicList.html" target="_blank">11.basicList</a></li>
+<li><a href="https://jihunsg.github.io/3/basicDList.html" target="_blank">12.basicDList</a></li>
+<li><a href="https://jihunsg.github.io/3/koreaAnthem5.html" target="_blank">13.애국가5</a></li>
+<li><a href="https://jihunsg.github.io/3/koreaAnthem6.html" target="_blank">14.애국가6</a></li>
+<li><a href="https://jihunsg.github.io/3/tableHw.html" target="_blank">15.tableHw</a></li>
+<li><a href="https://jihunsg.github.io/3/tableSpan.html" target="_blank">16.tableSpan</a></li>
+<li><a href="https://jihunsg.github.io/3/timeTable.html" target="_blank">17.시간표</a></li>
+</ul>
+
+</div>
+<div class="div1" id="div_4" style="display:none;">
+  <ul type="none">
+   <li><a href="https://jihunsg.github.io/4/tag_video.html" target="_blank">1.tag_video</a></li>
+ <li><a href="https://jihunsg.github.io/4/basicPDivSpan.html" target="_blank">2.basicPDivSpan</a></li>
+ <li><a href="https://jihunsg.github.io/4/basicDiv.html" target="_blank">3.basicDiv</a></li>
+ <li><a href="https://jihunsg.github.io/4/advDiv.html" target="_blank">4.advDiv</a></li>
+ <li><a href="https://jihunsg.github.io/4/basicSemantic.html" target="_blank">5.basicSenmantic</a></li>
+ <li><a href="https://jihunsg.github.io/4/basicModel.html" target="_blank">6.basicModel</a></li>
+ <li><a href="https://jihunsg.github.io/4/advAnchor.html" target="_blank">7.advAnchor</a></li>
+ <li><a href="https://jihunsg.github.io/4/anchor1.html" target="_blank">8.anchor1</a></li>
+ <li><a href="https://jihunsg.github.io/4/basicImage.html" target="_blank">9.basicImage</a></li>
+ <li><a href="https://jihunsg.github.io/4/basicSemantic1.html" target="_blank">10.basicSemantic1</a></li>
+ <li><a href="https://jihunsg.github.io/4/basicSemantic2.html" target="_blank">11.basicSemantic2</a></li>
+ <li><a href="https://jihunsg.github.io/4/ismap.html" target="_blank">12.Ismap</a></li>
+  </ul>
+
+</div>
+<div class="div1" id="div_5" style="display:none;">
+  <ul type="none">
+  <li><a href="https://jihunsg.github.io/5/imageMap.html"target="_blank">1.imagemap</a></li>
+<li><a href="https://jihunsg.github.io/5/imageMap2.html"target="_blank">2.대전대캠퍼스</a></li>
+<li><a href="https://jihunsg.github.io/5/worldmap.html"target="_blank">3.세계지도</a></li>
+  </ul>
+</div>
+<div class="div1" id="div_6" style="display:none;">
+ <ul type="none">
+  <li><a href="https://jihunsg.github.io/6/basicAudio.html" target="_blank">1.basicAudio</a></li>
+<li><a href="https://jihunsg.github.io/6/basicVideo.html" target="_blank">2.basicVideo</a></li>
+<li><a href="https://jihunsg.github.io/6/anchor21.html" target="_blank">3.anchor2</a></li>
+<li><a href="https://jihunsg.github.io/6/basicSemantic3.html" target="_blank">4.basicSemantic3</a></li>
+<li><a href="https://jihunsg.github.io/6/formText1.html" target="_blank">5.로그인 Text1</a></li>
+<li><a href="https://jihunsg.github.io/6/formRadio1.html" target="_blank">6.성별선택 Radio1</a></li>
+<li><a href="https://jihunsg.github.io/6/formCheckbox1.html" target="_blank">7.취미 Checkbox1</a></li>
+<li><a href="https://jihunsg.github.io/6/formSearch1.html" target="_blank">8.검색 Search1</a></li>
+<li><a href="https://jihunsg.github.io/6/formDateTime1.html" target="_blank">9.날짜 DateTime</a></li>
+<li><a href="https://jihunsg.github.io/6/formEmailAuto1.html" target="_blank">10.이메일 EmailAuto1</a></li>
+<li><a href="https://jihunsg.github.io/6/formFormaction1.html" target="_blank">11.최단시간 Formaction1</a></li>
+<li><a href="https://jihunsg.github.io/6/formSelect1.html" target="_blank">12.식사선택1 Select1</a></li>
+<li><a href="https://jihunsg.github.io/6/formMselect1.html" target="_blank">13.식사선택2 Mselect1</a></li>
+<li><a href="https://jihunsg.github.io/6/formTextarea1.html" target="_blank">14.남기는말 Textarea1</a></li>
+<li><a href="https://jihunsg.github.io/6/basicSemantic4.html" target="_blank">15.basicSamentic4</a></li>
+<li><a href="https://jihunsg.github.io/6/basicSemanticMember1.html" target="_blank">16.basicSamenticMember1(회원가입)</a></li>
+<li><a href="https://jihunsg.github.io/6/anchor2.html" target="_blank">17.최종 anchor2</a></li> 
+<li><a href="https://jihunsg.github.io/6/jspintro.html" target="_blank">18.jspintro</a></li>
+<li><a href="https://jihunsg.github.io/6/reservation1.html" target="_blank">19.식당예약 reservation</a></li>
+<li><a href="https://jihunsg.github.io/6/MovieSelect.html" target="_blank">20.영화선택(과제)</a></li>
+</ul>
+</div>
+<div class="div1" id="div_7" style="display:none;">
+  <ul type='none'>
+<li><a href="https://jihunsg.github.io/7/basicCssIntro.html" target="_blank">1.basicCssintro</a></li>
+<li><a href="https://jihunsg.github.io/7/basicSimple.html" target="_blank">2.basicSimple</a></li>
+<li><a href="https://jihunsg.github.io/7/inline1.html" target="_blank">3.inline1</a></li>
+<li><a href="https://jihunsg.github.io/7/embed1.html" target="_blank">4.embed1</a></li>
+<li><a href="https://jihunsg.github.io/7/outstyle.html" target="_blank">5.outstyle</a></li>
+<li><a href="https://jihunsg.github.io/7/sample.html" target="_blank">6.sampleDom</a></li>
+ <li><a href="https://jihunsg.github.io/7/complexDesc.html" target="_blank">7.complexDesc</a></li>
+ <li><a href="https://jihunsg.github.io/7/complexbro.html" target="_blank">8.complexbro</a></li>
+ <li><a href="https://jihunsg.github.io/7/complexchild.html" target="_blank">9.complexchild</a></li>
+ <li><a href="https://jihunsg.github.io/7/member1.html" target="_blank">10.member1</a></li>
+ <li><a href="https://jihunsg.github.io/7/pseudoselector.html" target="_blank">11.pseudoselector</a></li>
+ <li><a href="https://jihunsg.github.io/7/selectorcls.html" target="_blank">12.selectorcls</a></li>
+  <li><a href="https://jihunsg.github.io/7/selectorid.html" target="_blank">13.selectorid</a></li>
+  <li><a href="https://jihunsg.github.io/7/selectortag.html" target="_blank">14.selectortag</a></li>
+   <li><a href="https://jihunsg.github.io/7/htmlDom.html" target="_blank">15.htmlDom</a></li>
+</ul>
+</div>
+<div class="div1" id="div_8" style="display:none;"></div>
+<div class="div1" id="div_9" style="display:none;">
+  <ul type="none">
+    <li><a href="https://jihunsg.github.io/9/cssBg1.html" target="_blank">1.cssBg1</a></li>
+<li><a href="https://jihunsg.github.io/9/cssBorder1.html" target="_blank">2.cssBorder1</a></li>
+<li><a href="https://jihunsg.github.io/9/cssBox1.html" target="_blank">3.cssBox1</a></li>
+<li><a href="https://jihunsg.github.io/9/cssBox2.html" target="_blank">4.cssBox2</a></li>
+<li><a href="https://jihunsg.github.io/9/cssBox3.html" target="_blank">5.cssbox3</a></li>
+<li><a href="https://jihunsg.github.io/9/cssBox4.html" target="_blank">6.cssBox4</a></li>
+<li><a href="https://jihunsg.github.io/9/cssFont1.html" target="_blank">7.cssFont1</a></li>
+<li><a href="https://jihunsg.github.io/9/cssMargin1.html" target="_blank">8.cssMargin1</a></li>
+<li><a href="https://jihunsg.github.io/9/cssPadding1.html" target="_blank">9.cssPadding</a></li>
+<li><a href="https://jihunsg.github.io/9/cssText1.html" target="_blank">10.cssText1</a></li>
+<li><a href="https://jihunsg.github.io/9/cssText2.html" target="_blank">11.cssText2</a></li>
+<li><a href="https://jihunsg.github.io/9/cssWidthHeight1.html" target="_blank">12cssWidthHeight1</a></li>
+  </ul>
+</div>
+<div class="div1" id="div_10" style="display:none;">
+  <ul type="none">
+  <li><a href="https://jihunsg.github.io/10/cssClear1.html" target="_blank">1.cssClear1</a></li>
+<li><a href="https://jihunsg.github.io/10/cssDisp.html" target="_blank">2.cssDisp</a></li>
+ <li><a href="https://jihunsg.github.io/10/cssDisplayInlineBlock1.html" target="_blank">3.cssDisplayInlineBlock1</a></li>
+ <li><a href="https://jihunsg.github.io/10/cssFloat.html" target="_blank">4.cssFloat</a></li>
+ <li><a href="https://jihunsg.github.io/10/cssOverflow.html" target="_blank">5.cssOverflow</a></li>
+ <li><a href="https://jihunsg.github.io/10/cssOverflowImage.html" target="_blank">6.cssOverflowImage</a></li>
+ <li><a href="https://jihunsg.github.io/10/cssVis1.html" target="_blank">7.cssVis1</a></li>
+ <li><a href="https://jihunsg.github.io/10/AbsoluteBody.html" target="_blank">8.AbsoluteBody</a></li>
+ <li><a href="https://jihunsg.github.io/10/cssAbsolute.html" target="_blank">9.cssAbsolute</a></li>
+ <li><a href="https://jihunsg.github.io/10/cssFixed1.html" target="_blank">10.cssFixed1</a></li>
+ <li><a href="https://jihunsg.github.io/10/cssStatic1.html" target="_blank">11.cssStatic1</a></li>
+ <li><a href="https://jihunsg.github.io/10/cssRelative1.html" target="_blank">12.cssRelative1</a></li>
+ <li><a href="https://jihunsg.github.io/10/cssLayOut.html" target="_blank">13.cssLayOut(과제)</a></li>
+  </ul>
+</div>
+<div class="div1" id="div_11" style="display:none;">
+  <ul type="none">
+  <li><a href="https://jihunsg.github.io/11/cssTable1.html" target="_blank">1.cssTable1</a></li>
+<li><a href="https://jihunsg.github.io/11/cssTable2.html" target="_blank">2.cssTable2</a></li>
+ <li><a href="https://jihunsg.github.io/11/cssTable3.html" target="_blank">3.cssTable3</a></li>
+  <li><a href="https://jihunsg.github.io/11/cssTable4.html" target="_blank">4.cssTable4</a></li>
+ <li><a href="https://jihunsg.github.io/11/cssList1.html" target="_blank">5.cssList1</a></li>
+ <li><a href="https://jihunsg.github.io/11/cssList2.html" target="_blank">6.cssList2</a></li>
+ <li><a href="https://jihunsg.github.io/11/login1.html" target="_blank">7.login1</a></li>
+ <li><a href="https://jihunsg.github.io/11/login2.html" target="_blank">8.login2</a></li>
+ <li><a href="https://jihunsg.github.io/11/login3.html" target="_blank">9.login3</a></li>
+ <li><a href="https://jihunsg.github.io/11/login4.html" target="_blank">10.login4</a></li>
+ <li><a href="https://jihunsg.github.io/11/login5.html" target="_blank">11.login5</a></li>
+ <li><a href="https://jihunsg.github.io/11/memb1.html" target="_blank">12.memb1</a></li>
+ <li><a href="https://jihunsg.github.io/11/memb2.html" target="_blank">13.memb2</a></li>
+ <li><a href="https://jihunsg.github.io/11/memb3.html" target="_blank">14.memb3</a></li>
+ <li><a href="https://jihunsg.github.io/11/memb4.html" target="_blank">15.memb4</a></li>
+ <li><a href="https://jihunsg.github.io/11/memb5.html" target="_blank">16.memb5</a></li>
+  <li><a href="https://jihunsg.github.io/11/memb6.html" target="_blank">17.memb6</a></li>
+ 
+  </ul>
+</div>
+<div class="div1" id="div_12" style="display:none;"></div>
+<div class="div1" id="div_13" style="display:none;"></div>
+
+
+</body>
+</html>
