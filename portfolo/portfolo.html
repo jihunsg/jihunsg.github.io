@@ -315,10 +315,80 @@ header{
 
 function HTML(){
   document.getElementById("HTML").style.display='block';
+  document.getElementById("C++").style.display='none';
+  document.getElementById("report6").style.display='none';
+  document.getElementById("report2").style.display='none';
+  document.getElementById("report3").style.display='none';
+  document.getElementById("report4").style.display='none';
+  document.getElementById("report5").style.display='none';
+  document.getElementById("report1").style.display='none';
 }
+
+function report1(){
+	document.getElementById("report1").style.display='block';
+  document.getElementById("report2").style.display='none';
+  document.getElementById("report3").style.display='none';
+  document.getElementById("report4").style.display='none';
+  document.getElementById("report5").style.display='none';
+  document.getElementById("report6").style.display='none';
+}
+function report2(){
+	document.getElementById("report2").style.display='block';
+  document.getElementById("report1").style.display='none';
+  document.getElementById("report3").style.display='none';
+  document.getElementById("report4").style.display='none';
+  document.getElementById("report5").style.display='none';
+  document.getElementById("report6").style.display='none';
+}
+function report3(){
+	document.getElementById("report3").style.display='block';
+  document.getElementById("report2").style.display='none';
+  document.getElementById("report1").style.display='none';
+  document.getElementById("report4").style.display='none';
+  document.getElementById("report5").style.display='none';
+  document.getElementById("report6").style.display='none';
+}
+function report4(){
+	document.getElementById("report4").style.display='block';
+  document.getElementById("report2").style.display='none';
+  document.getElementById("report3").style.display='none';
+  document.getElementById("report1").style.display='none';
+  document.getElementById("report5").style.display='none';
+  document.getElementById("report6").style.display='none';
+}
+function report5(){
+	document.getElementById("report5").style.display='block';
+  document.getElementById("report2").style.display='none';
+  document.getElementById("report3").style.display='none';
+  document.getElementById("report4").style.display='none';
+  document.getElementById("report1").style.display='none';
+  document.getElementById("report6").style.display='none';
+}
+function report6(){
+	document.getElementById("report6").style.display='block';
+  document.getElementById("report2").style.display='none';
+  document.getElementById("report3").style.display='none';
+  document.getElementById("report4").style.display='none';
+  document.getElementById("report5").style.display='none';
+  document.getElementById("report1").style.display='none';
+}
+
 function C(){
   document.getElementById("HTML").style.display='none';
   document.getElementById("C++").style.display='block';
+  document.getElementById("div_1").style.display='none';
+  document.getElementById("div_2").style.display='none';
+  document.getElementById("div_3").style.display='none';
+  document.getElementById("div_4").style.display='none';
+  document.getElementById("div_5").style.display='none';
+  document.getElementById("div_6").style.display='none';
+  document.getElementById("div_7").style.display='none';
+  document.getElementById("div_8").style.display='none';
+  document.getElementById("div_9").style.display='none';
+  document.getElementById("div_10").style.display='none';
+  document.getElementById("div_11").style.display='none';
+  document.getElementById("div_12").style.display='none';
+  document.getElementById("div_13").style.display='none';
 }
 </script>
 
@@ -364,6 +434,7 @@ function C(){
 
 <div id="HTML" style="display:none;" class="HTML">
  <ul>
+ <li>HTML</li>
    <li><a onclick="javascript:ViewLayer1();" href="#">1주차</a></li>
    <li><a onclick="javascript:ViewLayer2()" href="#">2주차</a></li>
    <li><a onclick="javascript:ViewLayer3()" href="#">3주차</a></li>
@@ -548,12 +619,13 @@ function C(){
 
 <div id="C++" style="display:none;" class="HTML">
   <ul>
-    <li><a href="#">과제 1</a></li>
-    <li><a href="#">과제 2</a></li>
-    <li><a href="#">과제 3</a></li>
-    <li><a href="#">과제 4</a></li>
-    <li><a href="#">과제 5</a></li>
-    <li><a href="#">과제 6</a></li>
+  <li>C++</li>
+    <li><a onclick="javascript:report1()" href="#">과제 1</a></li>
+    <li><a onclick="javascript:report2()"  href="#">과제 2</a></li>
+    <li><a onclick="javascript:report3()"  href="#">과제 3</a></li>
+    <li><a onclick="javascript:report4()"  href="#">과제 4</a></li>
+    <li><a onclick="javascript:report5()"  href="#">과제 5</a></li>
+    <li><a onclick="javascript:report6()"  href="#">과제 6</a></li>
     <li><a href="#">실습 2</a></li>
     <li><a href="#">실습 3</a></li>
     <li><a href="#">실습 4</a></li>
@@ -566,6 +638,22 @@ function C(){
     <li><a href="#">실습 12</a></li>
     <li><a href="#">실습 13</a></li>
   </ul>
+</div>
+<div class="div1" id="report1" style="display:none;">
+  <img src="https://jihunsg.github.io/portfolo/자판기.JPG" border=0;>
+</div>
+<div class="div1" id="report2" style="display:none;">
+  <img src="https://jihunsg.github.io/portfolo/달러환전.JPG" border=0;>
+</div>
+<div class="div1" id="report3" style="display:none;">
+  <img src="https://jihunsg.github.io/portfolo/직원봉급.JPG" border=0;>
+</div>
+<div class="div1" id="report4" style="display:none;">
+  <img src="https://jihunsg.github.io/portfolo/시간변환.JPG" border=0;>
+</div>
+<div class="div1" id="report5" style="display:none;"><img src="https://jihunsg.github.io/portfolo/과제5.JPG" border=0;></div>
+<div class="div1" id="report6" style="display:none;">
+  <img src="https://jihunsg.github.io/portfolo/과제 6.JPG" border=0;>
 </div>
 
 </body>
