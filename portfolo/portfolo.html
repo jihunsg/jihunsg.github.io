@@ -5,7 +5,7 @@
 <meta name="viewport"content="width=device-width,initial-scale=1"/>
 <style> 
 @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
-*{box-sizing:border-box; padding:0; margin:0;  height:100%; width:100%; font-size:100%;}
+*{box-sizing:border-box; padding:0; margin:0;  height:100%; font-size:100%; width:100%;}
 body{
 background-color:#EEEEEE;
 }
@@ -100,7 +100,19 @@ header{
   padding-left:30px;
   font-size:140%;
 }
-
+.div1 ul li a{
+  list-style:none;
+  text-decoration:none;
+  color:black;
+  float:left;
+}
+.div1 ul li a:visited{
+  list-style:none;
+  text-decoration:underline;
+  color:lightgray;
+  float:left;
+}
+.HTM
 </style> 
 
 
@@ -301,9 +313,12 @@ header{
   document.getElementById("div_1").style.display='none';
 }
 
-function ViewLayer(){
+function HTML(){
   document.getElementById("HTML").style.display='block';
-  
+}
+function C(){
+  document.getElementById("HTML").style.display='none';
+  document.getElementById("C++").style.display='block';
 }
 </script>
 
@@ -322,8 +337,8 @@ function ViewLayer(){
  <div style="position:relative; z-index:1;" class="contents">
     <h3>실습 
       <ul>
-        <li onclick="javascript:ViewLayer();">HTML</li>
-        <li>C++</li>
+        <li onclick="javascript:HTML();">HTML</li>
+        <li onclick="javascript:C();">C++</li>
         <li>JAVA</li>
       </ul>
     </h3>
@@ -531,6 +546,27 @@ function ViewLayer(){
 <div class="div1" id="div_12" style="display:none;"></div>
 <div class="div1" id="div_13" style="display:none;"></div>
 
+<div id="C++" style="display:none;" class="HTML">
+  <ul>
+    <li><a href="#">과제 1</a></li>
+    <li><a href="#">과제 2</a></li>
+    <li><a href="#">과제 3</a></li>
+    <li><a href="#">과제 4</a></li>
+    <li><a href="#">과제 5</a></li>
+    <li><a href="#">과제 6</a></li>
+    <li><a href="#">실습 2</a></li>
+    <li><a href="#">실습 3</a></li>
+    <li><a href="#">실습 4</a></li>
+    <li><a href="#">실습 5</a></li>
+    <li><a href="#">실습 6</a></li>
+    <li><a href="#">실습 7</a></li>
+    <li><a href="#">실습 9</a></li>
+    <li><a href="#">실습 10</a></li>
+    <li><a href="#">실습 11</a></li>
+    <li><a href="#">실습 12</a></li>
+    <li><a href="#">실습 13</a></li>
+  </ul>
+</div>
 
 </body>
 </html>
