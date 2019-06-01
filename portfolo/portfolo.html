@@ -118,7 +118,6 @@ header{
 .div2{
  height:auto;
  width:70%;
-
  position:absolute;
  left:25%;
  top:180px;
@@ -127,9 +126,73 @@ header{
 .div2 ul li{
   padding-left:30px;
   font-size:140%;
+  margin:5px;
 }
 
+table{
+  position:relative;
+  top:-450px;
+}
+table,th,td{
+  bottom:100px;
+  border-collapse:collapse;
+  padding:5px;
+  
+  width:100%;
+  table-layout:fixed;
+   border:3px solid gray;
+}   
+td, th{height: 60px;}
+   
+td {
+  width:100%;
+   vertical-align:center;
+}
+td {
+  width:100%;
+  text-align:center;
+}
 
+ .class1{background-color:orange;}
+ .class2{background-color:violet;}
+ .class3{background-color:Yellow;}
+ .class4{background-color:pink;}
+ .class5{background-color:skyBlue;}
+ .class6{background-color:lightgray;}
+ .class7{background-color:brown;}
+ .class8{background-color:white;}
+ .class9{background-color:lightyellow;}
+ 
+.timex{
+  padding:5%;
+}
+.timex ul{
+  list-style:none;
+  height:auto;
+  width:auto;
+  color:gray;
+  font-size:150%;
+  text-decoration:none;
+  background-color:lightgray;
+  text-align:center;
+  line-height:200%;
+}
+.timex ul li{
+  cursor:pointer;
+  height:auto;
+  width:auto;
+  padding:10px;
+  list-style:none;
+  text-decoration:none;
+  color:gray;
+  background-color:lightgray;
+  float:left;
+  border-radius:15px;
+}
+.timex ul li:hover{
+  background-color:gray;
+  color:black;
+}
 
 </style> 
 
@@ -330,18 +393,40 @@ header{
   document.getElementById("div_12").style.display='none';
   document.getElementById("div_1").style.display='none';
 }
-
 function HTML(){
+  document.getElementById("timex").style.display='none';
+  document.getElementById("timexx").style.display='none';
+	document.getElementById("java").style.display='none';
   document.getElementById("HTML").style.display='block';
   document.getElementById("C++").style.display='none';
-  document.getElementById("java").style.display='none';
   document.getElementById("report6").style.display='none';
   document.getElementById("report2").style.display='none';
   document.getElementById("report3").style.display='none';
   document.getElementById("report4").style.display='none';
   document.getElementById("report5").style.display='none';
   document.getElementById("report1").style.display='none';
+  
+  
 }
+function timexx(){
+	document.getElementById("timexx").style.display='block';
+  document.getElementById("timexx1").style.display='none';
+  document.getElementById("timexx2").style.display='none';
+}
+function timexx1(){
+  document.getElementById("timexx1").style.display='block';
+  document.getElementById("timexx").style.display='none';
+  document.getElementById("timexx2").style.display='none';
+}
+function timexx2(){
+  document.getElementById("timexx2").style.display='block';
+  document.getElementById("timexx1").style.display='none';
+  document.getElementById("timexx").style.display='none';
+}
+function timex(){
+  document.getElementById("timex").style.display='block';
+}
+
 
 function report1(){
 	document.getElementById("report1").style.display='block';
@@ -393,7 +478,8 @@ function report6(){
 }
 
 function C(){
-	
+document.getElementById("timexx").style.display='none';
+	document.getElementById("timex").style.display='none';
   document.getElementById("HTML").style.display='none';
   document.getElementById("C++").style.display='block';
   document.getElementById("java").style.display='none';
@@ -412,6 +498,8 @@ function C(){
   document.getElementById("div_13").style.display='none';
 }
 function JAVA(){
+document.getElementById("timexx").style.display='none';
+  document.getElementById("timex").style.display='none';
 	document.getElementById("java").style.display='block';
   document.getElementById("HTML").style.display='none';
   document.getElementById("C++").style.display='none';
@@ -421,7 +509,6 @@ function JAVA(){
   document.getElementById("report4").style.display='none';
   document.getElementById("report5").style.display='none';
   document.getElementById("report1").style.display='none';
-  document.getElementById("C++").style.display='none';
   document.getElementById("div_1").style.display='none';
   document.getElementById("div_2").style.display='none';
   document.getElementById("div_3").style.display='none';
@@ -435,6 +522,10 @@ function JAVA(){
   document.getElementById("div_11").style.display='none';
   document.getElementById("div_12").style.display='none';
   document.getElementById("div_13").style.display='none';
+}
+
+function report1(){
+	document.getElementById("report1").style.display='block';
 }
 
 </script>
@@ -463,9 +554,9 @@ function JAVA(){
   <div style="position:relative; z-index:1;" class="contents">
     <h3>INFORMATION 
       <ul>
-        <li>HTML</li>
-        <li>C++</li>
-        <li>JAVA</li>
+        <li onclick="javascript:timex();">시간표</li>
+        <li>자격증</li>
+        <li></li>
       </ul>
     </h3>
 </div>
@@ -478,7 +569,46 @@ function JAVA(){
       </ul>
     </h3>
 </div>
-
+<div id="timex" class="timex" style="display:none;">
+  <ul>
+    <li onclick="javascript:timexx1();">1학년 1학기</li>
+    <li onclick="javascript:timexx2();">1학년 2학기</li>
+    <li onclick="javascript:timexx();">2학년 1학기</li>
+  </ul>
+</div>
+<div id="timexx" style="display:none;">
+ <table aligm="center">
+ <thead>
+ <tr><th>2학년 1학기</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th></tr>
+ </thead>
+ <tbody>
+  <tr> <td>1교시</td> <td></td> <td></td> <td rowspan="2" class = "class2">자료구조및 실습</td> <td></td> <td></td>
+  <tr> <td>2교시</td> <td></td> <td></td><td></td><td></td></tr>
+  <tr> <td>3교시</td> <td rowspan="2" class ="class1">영어회화 1</td> <td rowspan="2" class = "class2">자료조 및 실습</td> <td> </td><td></td> <td></td></tr>
+  <tr> <td>4교시</td>  <td rowspan="2" class = "class4">인터넷 프로그래밍</td><td></td><td></td></tr>
+  <tr> <td>5교시</td> <td></td> <td class = "class5">디지털 논리회로</td>  <td rowspan="2" class = "class4">인터넷 프로그래밍</td><td></td></tr>
+  <tr> <td>6교시</td> <td rowspan="2" class = "class5">디지털 논리회로</td><td></td>  <td rowspan="4" class = "class6">c++프로그래밍</td><td></td></tr>
+  <tr> <td>7교시</td> <td rowspan="3" class="class3">환경과 인간</td><td rowspan="2" class = "class7">캠퍼스 맨토링</td><td></td></tr>
+  <tr> <td>8교시</td> <td></td> <td></td>  </tr>
+  <tr> <td>9교시</td> <td></td> <td></td> <td></td> </tr></tbody></table>
+  </div>
+<div id="timexx1" style="display:none;">
+<table align="center">
+ <thead>
+ <tr><th>1학년 1학기</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th></tr>
+ </thead>
+ <tbody>
+  <tr> <td>1교시</td> <td></td>  <td rowspan="2" class = "class2">일본신화</td> <td></td><td rowspan="2" class="class9">글쓰기기초</td> <td></td>
+  <tr> <td>2교시</td> <td></td> <td></td><td></td></tr>
+  <tr> <td>3교시</td> <td class ="class1">비전탐색</td> <td rowspan="2" class = "class3">이산수학</td> <td rowspan="2" class="class6"> 소프트웨어 디자인</td><td rowspan="2" class="class5">영어강독</td> <td></td></tr>
+  <tr> <td>4교시</td> <td></td><td></td> <td></td><td></td></tr>
+  <tr> <td>5교시</td> <td></td> <td></td> <td></td> <td></td><td></td></tr>
+  <tr> <td>6교시</td> <td class="class3">이산수학</td><td></td><td></td>  <td></td><td></td></tr>
+  <tr> <td>7교시</td> <td rowspan="4" class="class4">우주와 지구</td><td rowspan="2" class = "class7">탁구</td><td rowspan="2" class="class8">인간관계 심리학</td><td></td><td></td></tr>
+  <tr> <td>8교시</td> <td></td> <td></td><td></td>  </tr>
+  <tr> <td>9교시</td> <td></td> <td></td> <td></td> <td></td></tr></tbody></table>
+</div>
+  
 <div id="HTML" style="display:none;" class="HTML">
  <ul>
  <li>HTML</li>
