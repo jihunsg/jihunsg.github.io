@@ -1,3 +1,4 @@
+
 <!doctype html><!-- memb6.html-->
 <html>
 <head>
@@ -23,16 +24,17 @@ header{
 .contents {
   float: left; 
   height: 53px; 
-  width: 25%; 
+  width:25%; 
   text-align:center;
   font-size:200%;
   font-weight:900;
   font-family:sans-serif;
+  
   }
 .contents h3{
   cursor:pointer;
   color:gray;
-
+  
 }
 .contents :hover{
  background-color:lightgray;
@@ -126,6 +128,7 @@ header{
   padding-left:30px;
   font-size:140%;
 }
+
 
 
 </style> 
@@ -331,6 +334,7 @@ header{
 function HTML(){
   document.getElementById("HTML").style.display='block';
   document.getElementById("C++").style.display='none';
+  document.getElementById("java").style.display='none';
   document.getElementById("report6").style.display='none';
   document.getElementById("report2").style.display='none';
   document.getElementById("report3").style.display='none';
@@ -389,8 +393,10 @@ function report6(){
 }
 
 function C(){
+	
   document.getElementById("HTML").style.display='none';
   document.getElementById("C++").style.display='block';
+  document.getElementById("java").style.display='none';
   document.getElementById("div_1").style.display='none';
   document.getElementById("div_2").style.display='none';
   document.getElementById("div_3").style.display='none';
@@ -405,6 +411,32 @@ function C(){
   document.getElementById("div_12").style.display='none';
   document.getElementById("div_13").style.display='none';
 }
+function JAVA(){
+	document.getElementById("java").style.display='block';
+  document.getElementById("HTML").style.display='none';
+  document.getElementById("C++").style.display='none';
+  document.getElementById("report6").style.display='none';
+  document.getElementById("report2").style.display='none';
+  document.getElementById("report3").style.display='none';
+  document.getElementById("report4").style.display='none';
+  document.getElementById("report5").style.display='none';
+  document.getElementById("report1").style.display='none';
+  document.getElementById("C++").style.display='none';
+  document.getElementById("div_1").style.display='none';
+  document.getElementById("div_2").style.display='none';
+  document.getElementById("div_3").style.display='none';
+  document.getElementById("div_4").style.display='none';
+  document.getElementById("div_5").style.display='none';
+  document.getElementById("div_6").style.display='none';
+  document.getElementById("div_7").style.display='none';
+  document.getElementById("div_8").style.display='none';
+  document.getElementById("div_9").style.display='none';
+  document.getElementById("div_10").style.display='none';
+  document.getElementById("div_11").style.display='none';
+  document.getElementById("div_12").style.display='none';
+  document.getElementById("div_13").style.display='none';
+}
+
 </script>
 
 <title> portfolio</title></head>
@@ -420,16 +452,16 @@ function C(){
  </a>
 </div>
  <div style="position:relative; z-index:1;" class="contents">
-    <h3>실습 
+    <h3>PRACTICE
       <ul>
         <li onclick="javascript:HTML();">HTML</li>
         <li onclick="javascript:C();">C++</li>
-        <li>JAVA</li>
+        <li onclick="javascript:JAVA();">JAVA</li>
       </ul>
     </h3>
 </div>
   <div style="position:relative; z-index:1;" class="contents">
-    <h3>실습 
+    <h3>INFORMATION 
       <ul>
         <li>HTML</li>
         <li>C++</li>
@@ -451,18 +483,18 @@ function C(){
  <ul>
  <li>HTML</li>
    <li><a onclick="javascript:ViewLayer1();" href="#">1주차</a></li>
-   <li><a onclick="javascript:ViewLayer2()" href="#">2주차</a></li>
-   <li><a onclick="javascript:ViewLayer3()" href="#">3주차</a></li>
-   <li><a onclick="javascript:ViewLayer4()" href="#">4주차</a></li>
-   <li><a onclick="javascript:ViewLayer5()" href="#">5주차</a></li>
-   <li><a onclick="javascript:ViewLayer6()" href="#">6주차</a></li>
-   <li><a onclick="javascript:ViewLayer7()" href="#">7주차</a></li>
-   <li><a onclick="javascript:ViewLayer8()" href="#">----</a></li>
-   <li><a onclick="javascript:ViewLayer9()" href="#">9주차</a></li>
-   <li><a onclick="javascript:ViewLayer10()" href="#">10주차</a></li>
-   <li><a onclick="javascript:ViewLayer11()" href="#">11주차</a></li>
-   <li><a onclick="javascript:ViewLayer12()" href="#">12주차</a></li>
-   <li><a onclick="javascript:ViewLayer13()" href="#">13주차</a></li>
+   <li><a onclick="javascript:ViewLayer2();" href="#">2주차</a></li>
+   <li><a onclick="javascript:ViewLayer3();" href="#">3주차</a></li>
+   <li><a onclick="javascript:ViewLayer4();" href="#">4주차</a></li>
+   <li><a onclick="javascript:ViewLayer5();" href="#">5주차</a></li>
+   <li><a onclick="javascript:ViewLayer6();" href="#">6주차</a></li>
+   <li><a onclick="javascript:ViewLayer7();" href="#">7주차</a></li>
+   <li><a onclick="javascript:ViewLayer8();" href="#">----</a></li>
+   <li><a onclick="javascript:ViewLayer9();" href="#">9주차</a></li>
+   <li><a onclick="javascript:ViewLayer10();" href="#">10주차</a></li>
+   <li><a onclick="javascript:ViewLayer11();" href="#">11주차</a></li>
+   <li><a onclick="javascript:ViewLayer12();" href="#">12주차</a></li>
+   <li><a onclick="javascript:ViewLayer13();" href="#">13주차</a></li>
    
  
  </ul>
@@ -635,12 +667,12 @@ function C(){
 <div id="C++" style="display:none;" class="HTML">
   <ul>
   <li>C++</li>
-    <li><a onclick="javascript:report1()" href="#">과제 1</a></li>
-    <li><a onclick="javascript:report2()"  href="#">과제 2</a></li>
-    <li><a onclick="javascript:report3()"  href="#">과제 3</a></li>
-    <li><a onclick="javascript:report4()"  href="#">과제 4</a></li>
-    <li><a onclick="javascript:report5()"  href="#">과제 5</a></li>
-    <li><a onclick="javascript:report6()"  href="#">과제 6</a></li>
+    <li><a onclick="javascript:report1();" href="#">과제 1</a></li>
+    <li><a onclick="javascript:report2();"  href="#">과제 2</a></li>
+    <li><a onclick="javascript:report3();"  href="#">과제 3</a></li>
+    <li><a onclick="javascript:report4();"  href="#">과제 4</a></li>
+    <li><a onclick="javascript:report5();"  href="#">과제 5</a></li>
+    <li><a onclick="javascript:report6();"  href="#">과제 6</a></li>
     <li><a href="#">실습 2</a></li>
     <li><a href="#">실습 3</a></li>
     <li><a href="#">실습 4</a></li>
@@ -654,6 +686,7 @@ function C(){
     <li><a href="#">실습 13</a></li>
   </ul>
 </div>
+
 <div class="div2" id="report1" style="display:none;">
   <img src="https://jihunsg.github.io/portfolo/자판기.JPG" border=0;>
   <ul style="list-style:none;">
@@ -691,5 +724,10 @@ function C(){
   </ul>
 </div>
 
+<div class="HTML" id="java" style="display:none;">
+  <ul style="font-size:400%; height:10px; width:300px;">
+    <li></li>
+  </ul>
+</div>
 </body>
 </html>
