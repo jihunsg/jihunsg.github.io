@@ -140,7 +140,6 @@ tr th{
 table,th,td{
   bottom:100px;
   border-collapse:collapse;
-  padding:5px;
   height:100%;
   width:80%;
   left:20px;
@@ -156,6 +155,18 @@ td {
    vertical-align:center;
 }
 td {
+  width:100%;
+  text-align:center;
+}
+
+tr{
+  height: 60px;
+} 
+tr {
+  width:100%;
+   vertical-align:center;
+}
+tr {
   width:100%;
   text-align:center;
 }
@@ -589,7 +600,7 @@ function report1(){
  <tr><th>2학년 1학기</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th></tr>
  </thead>
  <tbody>
- <tr></tr>
+
   <tr> <td>1교시</td> <td></td> <td></td> <td rowspan="2" class = "class2">자료구조및 실습</td> <td></td> <td></td>
   <tr> <td>2교시</td> <td></td> <td></td><td></td><td></td></tr>
   <tr> <td>3교시</td> <td rowspan="2" class ="class1">영어회화 1</td> <td rowspan="2" class = "class2">자료조 및 실습</td> <td> </td><td></td> <td></td></tr>
@@ -606,8 +617,7 @@ function report1(){
  <tr><th>1학년 1학기</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th></tr>
  </thead>
  <tbody>
- <tr></tr>
-  <tr width=50> <td>1교시</td> <td></td>  <td rowspan="2" class = "class2">일본신화</td> <td></td><td rowspan="2" class="class9">글쓰기기초</td> <td></td>
+  <tr> <td>1교시</td> <td></td>  <td rowspan="2" class = "class2">일본신화</td> <td></td><td rowspan="2" class="class9">글쓰기기초</td> <td></td>
   <tr> <td>2교시</td> <td></td> <td></td><td></td></tr>
   <tr> <td>3교시</td> <td class ="class1">비전탐색</td> <td rowspan="2" class = "class3">이산수학</td> <td rowspan="2" class="class6"> 소프트웨어 디자인</td><td rowspan="2" class="class5">영어강독</td> <td></td></tr>
   <tr> <td>4교시</td> <td></td><td></td> <td></td><td></td></tr>
