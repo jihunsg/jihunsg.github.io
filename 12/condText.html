@@ -1,0 +1,37 @@
+<!doctype html> <!-- condText.html -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="sample.css"/>
+<script src = "sample.js"></script>
+<title>웹 프로그래밍 실습</title>
+</head>
+<body>
+   <header>
+     <h2>실습 대환영</h2></header>
+   <nav>
+   <ul>
+    <li><a href="http://www.dju.ac.kr">대학</a></li>
+    <li><a href="http://hive.dju.ac.kr">실습서버</a></li>
+   </ul>
+  </nav>
+   <section>
+     <h4>조건/논리 연산자 예제 실습</h4>
+     <script>
+     var a=10, b=20, c=true;
+     document.write("a=", (a), ", b=", (b), ", c=", (c),"<br/>");
+     document.write("조건연산: ", "a==b ---->", (a==b), "a>b ---->", (a>b), "<br/>");
+     document.write("조건연산: ", "a<b ---->", (a<b), "!\c ---->", (!c), "<br/>");
+     document.write("조건연산: ", "a>=b ---->", (a>=b), "a<=b ---->", (a<=b),  "<br/>");
+     document.write("조건연산: ", "a!=b ---->", (a!=b),"<br/>");
+     var flag=undefined;
+     document.write("논리연산: ", "flag=(a>10)&&(b<10) ---->", (a>10)&&(b>10),"<br/>");
+     document.write("논리연산: ", "flag=(a>10)||(b<10) ---->", (a>10)||(b>10),"<br/>");
+     </script>
+   </section>
+   <footer>
+   <p>&copy; 20XX Made by Korea. All rights reserved. </p></footer>
+</body>
+</html>
