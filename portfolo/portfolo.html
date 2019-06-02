@@ -450,6 +450,7 @@ tr {
   document.getElementById("div_1").style.display='none';
 }
 function HTML(){
+document.getElementById("main").style.display='none';
   document.getElementById("timex").style.display='none';
   document.getElementById("timexx").style.display='none';
   document.getElementById("timexx1").style.display='none';
@@ -480,6 +481,7 @@ function timexx2(){
   document.getElementById("timexx").style.display='none';
 }
 function timex(){
+document.getElementById("main").style.display='none';
   document.getElementById("timex").style.display='block';
 	document.getElementById("java").style.display='none';
   document.getElementById("HTML").style.display='none';
@@ -556,6 +558,7 @@ function report6(){
 }
 
 function C(){
+document.getElementById("main").style.display='none';
 	document.getElementById("timexx").style.display='none';
 	document.getElementById("timexx1").style.display='none';
 	document.getElementById("timexx2").style.display='none';
@@ -578,6 +581,7 @@ function C(){
   document.getElementById("div_13").style.display='none';
 }
 function JAVA(){
+document.getElementById("main").style.display='none';
 document.getElementById("timexx").style.display='none';
 document.getElementById("timexx1").style.display='none';
 document.getElementById("timexx2").style.display='none';
@@ -606,7 +610,9 @@ document.getElementById("timexx2").style.display='none';
   document.getElementById("div_13").style.display='none';
 }
 
-
+function main(){
+document.getElementById("main").style.display='block';
+}
 
 </script>
 
@@ -652,7 +658,7 @@ PORTFOLIO
     </h3>
 </div>
 
-<div class="main">
+<div id="main" style="display:block;" class="main">
   <ul>
     <li>
       KIM 
