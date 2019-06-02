@@ -240,7 +240,7 @@ tr {
   display:none;
   text-align:center;
   border-radius:100%;
-  
+  cursor:pointer;
   
 }
 .main ul li{
@@ -508,7 +508,13 @@ document.getElementById("main").style.display='none';
   document.getElementById("div_12").style.display='none';
   document.getElementById("div_13").style.display='none';
 }
+function contents(){
+	document.getElementById("contents").style.display='block';
+  document.getElementById("contents1").style.display='block';
+  document.getElementById("contents2").style.display='block';
+  document.getElementById("contents3").style.display='block';
 
+}
 
 function report1(){
 	document.getElementById("report1").style.display='block';
@@ -627,12 +633,14 @@ PORTFOLIO
 
 
 
- <div class="contents">
+
+
+ <div id="contents" style="display:none;" class="contents">
  <a href="https://jihunsg.github.io/portfolo/portfolo">
     <h3>HOME</h3>
  </a>
 </div>
- <div style="position:relative; z-index:1;" class="contents">
+ <div id="contents1" style="display:none; position:relative; z-index:1;" class="contents">
     <h3>PRACTICE
       <ul>
         <li onclick="javascript:HTML();">HTML</li>
@@ -641,7 +649,7 @@ PORTFOLIO
       </ul>
     </h3>
 </div>
-  <div style="position:relative; z-index:1;" class="contents">
+  <div id="contents2" style="display:none; position:relative; z-index:1;" class="contents">
     <h3>INFORMATION 
       <ul>
         <li onclick="javascript:timex();">시간표</li>
@@ -650,7 +658,7 @@ PORTFOLIO
       </ul>
     </h3>
 </div>
-  <div style="position:relative; z-index:1;" class="contents">
+  <div id="contents3" style="display:none; position:relative; z-index:1;" class="contents">
     <h3>실습 
       <ul >
         <li>HTML</li>
@@ -662,7 +670,7 @@ PORTFOLIO
 
 <div id="main" style="display:block;" class="main">
   <ul>
-   <li>KIM JI HUN<br/>Portfolio</li>
+   <li onclick="javascript:contents();">KIM JI HUN<br/>Portfolio</li>
    
   </ul>
 </div>
