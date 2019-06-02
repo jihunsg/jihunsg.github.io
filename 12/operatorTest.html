@@ -1,0 +1,35 @@
+
+<!DOCTYPEhtml>  <!--  operatorTest.html  -->
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport"content="width=device-width,initial-scale=1"/>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="sample.css"/>
+<script src="sample.js"></script>
+<title>웹 프로그래밍 실습</title>
+</head>
+<body>
+<header><h2>실습 대환영</h2></header>
+<nav><ul><li><a href="http://hive.dju.ac.kr">실습서버</a></li></ul></nav>
+<section>
+<h4>연산자 예제 실습</h4>
+<script>
+var a=10, b=20;
+firstName="길동", lastName="홍";
+document.write("a=",(a), ", b=",(b), ", lastName=",(lastName), ", firstName=", (firstName), "br/>");
+document.write("숫자연산: ","a+b=",(a+b)," a-b=", (a-b), " a*b=",(a*b), " a/b=",(a/b), " a%b=",(a%b), "<br/>");
+document.write("문자연산: ","이름 = ", (lastName + firstName), "<br/>");
+document.write("복합연산: ","b+=5 ---->", (b+=5), ", 복합연산: ", " b*=5 ---->", (b*=5), "<br/>");
+var a = 10, b = 20, c = 0, d = 0;
+document.write("증감연산: ", "a = ", a , ", b = ", b, ", c = ", c , ", d= ", d, "<br/>");
+c = ++a;
+document.write("선증감연산: ", "c=++a, c = ", (c), " , a = ",(a), "<br/>");
+d = b++;
+document.write("후증감연산: ", "d=b++, d = ", (d), " , b = ",(b), "<br/>");             
+</script>
+</section>
+<footer>
+<p>&copy; 2019 Made by Korea. All right reserved.</p></footer>
+</body>
+</html>
