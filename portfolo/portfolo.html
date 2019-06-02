@@ -7,12 +7,15 @@
 <meta name="viewport"content="width=device-width,initial-scale=1"/>
 <style> 
 @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
-*{box-sizing:border-box; padding:0; margin:0;  height:100%; font-size:100%; width:100%;}
+*{box-sizing:border-box; padding:0; margin:0;  height:100%;  width:100%;}
 body{
-background-color:#EEEEEE;
+background-color:#354552;
+background-image:url('https://jihunsg.github.io/portfolo/image6.JPG');
+background-size: 500px;
+background-position:50% 70%;
+ background-repeat:no-repeat;
 }
 header{
-  
   color:white;
   background-color:#000000;
   padding:20px; 
@@ -20,7 +23,6 @@ header{
   text-align:center; 
   font-family: 'Jeju Gothic', sans-serif;
   font-weight:700;
-  opacity: 0.8;
   }
 .contents {
   float: left; 
@@ -98,7 +100,6 @@ header{
  left:25%;
  top:180px;
 }
-
 .div1 ul li{
   padding-left:30px;
   font-size:140%;
@@ -115,7 +116,6 @@ header{
   color:lightgray;
   float:left;
 }
-
 .div2{
  height:auto;
  width:70%;
@@ -123,17 +123,15 @@ header{
  left:25%;
  top:180px;
 }
-
 .div2 ul li{
   padding-left:30px;
   font-size:140%;
   margin:5px;
 }
-
 table{
   position:relative;
   top:-450px;
- 
+  left:100px;
 }
 tr th{
   height:60px;
@@ -141,16 +139,15 @@ tr th{
 table,th,td{
   bottom:100px;
   border-collapse:collapse;
-  height:100%;
-  width:80%;
-  left:20px;
+  height:60%;
+  width:60%;
+  left:270px;
   table-layout:fixed;
    border:3px solid gray;
 }   
 td{
   height: 60px;
-}
-   
+}  
 td {
   width:100%;
    vertical-align:center;
@@ -159,7 +156,6 @@ td {
   width:100%;
   text-align:center;
 }
-
 tr{
   height: 60px;
 } 
@@ -171,7 +167,6 @@ tr {
   width:100%;
   text-align:center;
 }
-
  .class1{background-color:orange;}
  .class2{background-color:violet;}
  .class3{background-color:Yellow;}
@@ -181,32 +176,32 @@ tr {
  .class7{background-color:brown;}
  .class8{background-color:white;}
  .class9{background-color:lightyellow;}
- 
 .timex{
   padding:5%;
 }
 .timex ul{
   list-style:none;
-  height:auto;
-  width:auto;
+  
   color:gray;
-  font-size:150%;
+  font-size:100%;
   text-decoration:none;
-  background-color:lightgray;
+  
   text-align:center;
   line-height:200%;
 }
 .timex ul li{
+  position:relative;
+  top:50px;
   cursor:pointer;
   height:auto;
-  width:auto;
+  width:14%;
   padding:10px;
   list-style:none;
   text-decoration:none;
   color:gray;
   background-color:lightgray;
-  float:left;
-  border-radius:15px;
+  font-weight:900%;
+ 
 }
 .timex ul li:hover{
   background-color:gray;
@@ -569,9 +564,7 @@ document.getElementById("timexx2").style.display='none';
   document.getElementById("div_13").style.display='none';
 }
 
-function report1(){
-	document.getElementById("report1").style.display='block';
-}
+
 
 </script>
 
@@ -579,8 +572,9 @@ function report1(){
 <body>
 
 <header style="font-size:400%;">
-김지훈
+PORTFOLIO
 </header>
+
 
  <div class="contents">
  <a href="https://jihunsg.github.io/portfolo/portfolo">
@@ -614,9 +608,10 @@ function report1(){
       </ul>
     </h3>
 </div>
+
 <div id="timex" class="timex" style="display:none;">
   <ul>
-    <li onclick="javascript:timexx1();">1학년 1학기</li>
+    <li style="" onclick="javascript:timexx1();">1학년 1학기</li>
     <li onclick="javascript:timexx2();">1학년 2학기</li>
     <li onclick="javascript:timexx();">2학년 1학기</li>
   </ul>
@@ -902,7 +897,6 @@ d
     <li style="text-align:center; color:gray;">과제 6</li>
   </ul>
 </div>
-
 <div class="HTML" id="java" style="display:none;">
   <ul style="font-size:400%; height:10px; width:300px;">
     <li></li>
