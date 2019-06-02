@@ -1,0 +1,41 @@
+<!doctype html> <!-- funcArgTest.html --> 
+ <html> 
+ <head> 
+ <meta http-equiv="Content-Type"content="text/html;charset=utf-8"/> 
+ <meta name="viewport"content="width=device-width,initial-scale=1"/> 
+ <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+ <link rel="stylesheet" href="sample.css"/>
+ <script src="sapmple.js"></script>
+ <script>
+ function fnGetChildNodes(){
+  var accessTag = document.getElementById("form_id1");
+   console.log(accessTag.tagName);
+   var children = accessTag.childNodes;
+   console.log(children);
+   children[5].nodeValue="텍스트 바꾸기 실행함";
+ }
+ </script>
+ <title>웹 프로그래밍 실습</title></head> 
+ <body> 
+   <header> 
+     <h2>HTML DOM 실습</h2></header> 
+   <nav> 
+     <ul> 
+       <li><a href="http://hive.dju.ac.kr">실습서버</a></li> 
+     </ul></nav> 
+   <section> <h4>
+  자바스크립트 실습
+   </h4>
+<form id="form_id1" name="form_name1">
+<input id="input_id1" type="text" name="input_name1" size="30"/>
+<input id="button_id1" type="button" name="user_id" value="입력"/><br/>
+빈칸에 검색어를 넣고 입력해 주세요.
+</form>
+   <form>
+   <input type="button" onclick="fnGetElementsByld();" value="변경실행"/>
+   </form>
+     </section> 
+   <footer> 
+     <p>&copy; 2019 Made by Korea. All right reserved.</p></footer> 
+ </body> 
+ </html> 
