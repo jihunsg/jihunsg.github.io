@@ -276,7 +276,7 @@ tr {
   list-style:none;
   text-align:center;
   vertical-align:center;
-  font-size:200%;
+  font-size:300%;
   padding:10%;
 }
 
@@ -284,21 +284,27 @@ tr {
   background-image:url('https://jihunsg.github.io/portfolo/개롱초.JPG');
   background-size:100% 120%;
   background-repeat:no-repeat;
-  opacity:0.5;
+  opacity:0.7;
 }
 
 .school2 li:hover {
   background-image:url('https://jihunsg.github.io/portfolo/보인중.JPG');
   background-size:100% 120%;
   background-repeat:no-repeat;
-  opacity:0.5;
+  opacity:0.7;
 }
 .school3 li:hover {
   background-image:url('https://jihunsg.github.io/portfolo/방산고.JPG');
   background-size:100% 120%;
   background-repeat:no-repeat;
-  opacity:0.5;
+  opacity:0.7;
 }
+
+.school4 li:hover {
+  background-image:url('https://jihunsg.github.io/5/대전대/32.jpg');
+  background-size:100% 120%;
+  background-repeat:no-repeat;
+  opacity:0.7;
 </style> 
 
 
@@ -681,6 +687,13 @@ tr {
   document.getElementById("HTML1").style.background='lightyellow';
 }
 function HTML(){
+document.getElementById("Name").style.display='none';
+document.getElementById("Name1").style.display='block';
+document.getElementById("Name2").style.display='none';
+document.getElementById("Name3").style.display='none';
+document.getElementById("Name4").style.display='none';
+document.getElementById("Name5").style.display='none';
+
 document.getElementById("school").style.display='none';
 document.getElementById("main").style.display='none';
   document.getElementById("timex").style.display='none';
@@ -742,6 +755,13 @@ function timexx2(){
   document.getElementById("timexxx").style.background='lightyellow';
 }
 function timex(){
+document.getElementById("Name").style.display='none';
+document.getElementById("Name1").style.display='none';
+document.getElementById("Name2").style.display='none';
+document.getElementById("Name3").style.display='block';
+document.getElementById("Name4").style.display='none';
+document.getElementById("Name5").style.display='none';
+
 document.getElementById("school").style.display='none';
 	document.getElementById("main").style.display='none';
   document.getElementById("timex").style.display='block';
@@ -882,6 +902,13 @@ function report6(){
   document.getElementById("C++1").style.background='lightyellow';
 }
 function C(){
+document.getElementById("Name").style.display='none';
+document.getElementById("Name1").style.display='none';
+document.getElementById("Name2").style.display='block';
+document.getElementById("Name3").style.display='none';
+document.getElementById("Name4").style.display='none';
+document.getElementById("Name5").style.display='none';
+
 document.getElementById("school").style.display='none';
 document.getElementById("main").style.display='none';
 	document.getElementById("timexx").style.display='none';
@@ -945,6 +972,13 @@ document.getElementById("timexx2").style.display='none';
 }
 
 function school(){
+document.getElementById("Name").style.display='none';
+document.getElementById("Name1").style.display='none';
+document.getElementById("Name2").style.display='none';
+document.getElementById("Name3").style.display='none';
+document.getElementById("Name4").style.display='none';
+document.getElementById("Name5").style.display='block';
+
 	document.getElementById("school").style.display='block';
   
   document.getElementById("timexx").style.display='none';
@@ -973,9 +1007,25 @@ function school(){
 
 <title> portfolio</title></head>
 <body>
-<header style="font-size:400%;">
+<header id="Name" style="font-size:400%;">
 PORTFOLIO
 </header>
+<header id="Name1" style="font-size:400%; display:none;">
+HTML
+</header>
+<header id="Name2" style="font-size:400%; display:none;">
+C++
+</header>
+<header id="Name3" style="font-size:400%; display:none;">
+시간표
+</header>
+<header id="Name4" style="font-size:400%; display:none;">
+자격증
+</header>
+<header id="Name5" style="font-size:400%; display:none;">
+학력
+</header>
+
 
  <div id="contents" style=" transition:all 1s;" class="contents">
  <a id="contents4" style="display:none;" href="https://jihunsg.github.io/portfolo/portfolo">
@@ -1373,7 +1423,7 @@ PORTFOLIO
   </ul>
 </div>
 <div >
-  <ul>
+  <ul class="school4">
     <li>대전대학교<br/>2학년 재학</li>
   </ul>
 </div>
