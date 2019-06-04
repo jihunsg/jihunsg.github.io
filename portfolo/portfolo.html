@@ -40,7 +40,7 @@ header{
   text-shadow:3px 3px 3px gray;
 }
 .contents :hover{
- background-color:#F0FFC8;
+ background-color:lightyellow;
 
   }
 .contents h3 ul{
@@ -61,7 +61,7 @@ header{
   text-decoration:none;
 }
 .contents h3:hover ul{
-  background-color:#F0FFC8;
+  background-color:lightyellow;
   display:block;
 }
 .contents ul li:hover {
@@ -70,9 +70,11 @@ header{
 .HTML{
   padding-top:80px;
   padding-left:5%;
+  
 }
 .HTML ul{
   list-style:none;
+  box-shadow:3px 3px 3px gray;
   height:auto;
   width:15%;
   color:gray;
@@ -82,11 +84,14 @@ header{
   text-align:center;
   line-height:200%;
 }
+.HTML ul li{
+   box-shadow:3px 3px 3px gray;
+}
 .HTML ul li a{
   list-style:none;
   text-decoration:none;
   color:gray;
- 
+  box-shadow:3px 3px 3px gray;
   float:left;
 }
 .HTML ul li a:hover{
@@ -191,6 +196,7 @@ tr {
   line-height:200%;
 }
 .timex ul li{
+  box-shadow:3px 3px 3px gray;
   font-size:100%;
   position:relative;
   top:50px;
@@ -201,12 +207,12 @@ tr {
   list-style:none;
   text-decoration:none;
   color:gray;
-  background-color:lightgray;
+  background-color:lightyellow;
   font-weight:900%;
  
 }
 .timex ul li:hover{
-  background-color:gray;
+  background-color:#EEEEEF;
   color:black;
 }
 
@@ -673,8 +679,9 @@ function timexx2(){
   document.getElementById("timexx1").style.display='none';
   document.getElementById("timexx").style.display='none';
 }
+
 function timex(){
-document.getElementById("main").style.display='none';
+	document.getElementById("main").style.display='none';
   document.getElementById("timex").style.display='block';
 	document.getElementById("java").style.display='none';
   document.getElementById("HTML").style.display='none';
@@ -725,11 +732,11 @@ function report1(){
   document.getElementById("report6").style.display='none';
   
   document.getElementById("C++1").style.background='#EEEEEF';
-  document.getElementById("C++2").style.background='lightgray';
-  document.getElementById("C++3").style.background='lightgray';
-  document.getElementById("C++4").style.background='lightgray';
-  document.getElementById("C++5").style.background='lightgray';
-  document.getElementById("C++6").style.background='lightgray';
+  document.getElementById("C++2").style.background='lightyellow';
+  document.getElementById("C++3").style.background='lightyellow';
+  document.getElementById("C++4").style.background='lightyellow';
+  document.getElementById("C++5").style.background='lightyellow';
+  document.getElementById("C++6").style.background='lightyellow';
  
 }
 function report2(){
@@ -741,11 +748,11 @@ function report2(){
   document.getElementById("report6").style.display='none';
   
   document.getElementById("C++2").style.background='#EEEEEF';
-  document.getElementById("C++1").style.background='lightgray';
-  document.getElementById("C++3").style.background='lightgray';
-  document.getElementById("C++4").style.background='lightgray';
-  document.getElementById("C++5").style.background='lightgray';
-  document.getElementById("C++6").style.background='lightgray';
+  document.getElementById("C++1").style.background='lightyellow';
+  document.getElementById("C++3").style.background='lightyellow';
+  document.getElementById("C++4").style.background='lightyellow';
+  document.getElementById("C++5").style.background='lightyellow';
+  document.getElementById("C++6").style.background='lightyellow';
 }
 function report3(){
 	document.getElementById("report3").style.display='block';
@@ -756,11 +763,11 @@ function report3(){
   document.getElementById("report6").style.display='none';
   
   document.getElementById("C++3").style.background='#EEEEEF';
-  document.getElementById("C++2").style.background='lightgray';
-  document.getElementById("C++1").style.background='lightgray';
-  document.getElementById("C++4").style.background='lightgray';
-  document.getElementById("C++5").style.background='lightgray';
-  document.getElementById("C++6").style.background='lightgray';
+  document.getElementById("C++2").style.background='lightyellow';
+  document.getElementById("C++1").style.background='lightyellow';
+  document.getElementById("C++4").style.background='lightyellow';
+  document.getElementById("C++5").style.background='lightyellow';
+  document.getElementById("C++6").style.background='lightyellow';
 }
 function report4(){
 	document.getElementById("report4").style.display='block';
@@ -771,12 +778,12 @@ function report4(){
   document.getElementById("report6").style.display='none';
   
     document.getElementById("C++4").style.background='#EEEEEF';
-  document.getElementById("C++2").style.background='lightgray';
-  document.getElementById("C++3").style.background='lightgray';
-  document.getElementById("C++1").style.background='lightgray';
-  document.getElementById("C++5").style.background='lightgray';
-  document.getElementById("C++6").style.background='lightgray';
-}
+  document.getElementById("C++2").style.background='lightyellow';
+  document.getElementById("C++3").style.background='lightyellow';
+  document.getElementById("C++1").style.background='lightyellow';
+  document.getElementById("C++5").style.background='lightyellow';
+  document.getElementById("C++6").style.background='lightyellow';
+  }
 function report5(){
 	document.getElementById("report5").style.display='block';
   document.getElementById("report2").style.display='none';
@@ -786,11 +793,11 @@ function report5(){
   document.getElementById("report6").style.display='none';
   
   document.getElementById("C++5").style.background='#EEEEEF';
-  document.getElementById("C++2").style.background='lightgray';
-  document.getElementById("C++3").style.background='lightgray';
-  document.getElementById("C++4").style.background='lightgray';
-  document.getElementById("C++1").style.background='lightgray';
-  document.getElementById("C++6").style.background='lightgray';
+  document.getElementById("C++2").style.background='lightyellow';
+  document.getElementById("C++3").style.background='lightyellow';
+  document.getElementById("C++4").style.background='lightyellow';
+  document.getElementById("C++1").style.background='lightyellow';
+  document.getElementById("C++6").style.background='lightyellow';
 }
 function report6(){
 	document.getElementById("report6").style.display='block';
@@ -801,11 +808,11 @@ function report6(){
   document.getElementById("report1").style.display='none';
   
   document.getElementById("C++6").style.background='#EEEEEF';
-  document.getElementById("C++2").style.background='lightgray';
-  document.getElementById("C++3").style.background='lightgray';
-  document.getElementById("C++4").style.background='lightgray';
-  document.getElementById("C++5").style.background='lightgray';
-  document.getElementById("C++1").style.background='lightgray';
+  document.getElementById("C++2").style.background='lightyellow';
+  document.getElementById("C++3").style.background='lightyellow';
+  document.getElementById("C++4").style.background='lightyellow';
+  document.getElementById("C++5").style.background='lightyellow';
+  document.getElementById("C++1").style.background='lightyellow';
 }
 
 function C(){
@@ -832,12 +839,12 @@ document.getElementById("main").style.display='none';
   document.getElementById("div_13").style.display='none';
   
   //C++색깔
-  document.getElementById("C++1").style.background='lightgray';
-  document.getElementById("C++2").style.background='lightgray';
-  document.getElementById("C++3").style.background='lightgray';
-  document.getElementById("C++4").style.background='lightgray';
-  document.getElementById("C++5").style.background='lightgray';
-  document.getElementById("C++6").style.background='lightgray';
+  document.getElementById("C++1").style.background='lightyellow';
+  document.getElementById("C++2").style.background='lightyellow';
+  document.getElementById("C++3").style.background='lightyellow';
+  document.getElementById("C++4").style.background='lightyellow';
+  document.getElementById("C++5").style.background='lightyellow';
+  document.getElementById("C++6").style.background='lightyellow';
 }
 function JAVA(){
 document.getElementById("main").style.display='none';
@@ -998,8 +1005,6 @@ PORTFOLIO
    <li><a id="HTML11" onclick="javascript:ViewLayer11();" href="#">11주차</a></li>
    <li><a id="HTML12" onclick="javascript:ViewLayer12();" href="#">12주차</a></li>
    <li><a id="HTML13" onclick="javascript:ViewLayer13();" href="#">13주차</a></li>
-   
- 
  </ul>
 </div>
 <div class="div1" id="div_1" style="display:none;">
