@@ -252,7 +252,8 @@ tr {
 }
 .student div{
   margin:10px;
-  
+  font-size:150%;
+  text-align:center;
   height:auto; 
   width:20%; 
   float:left;
@@ -274,7 +275,6 @@ tr {
   background-repeat:no-repeat;
   opacity:0.7;
 }
-
 .school2 li {
   background-image:url('https://jihunsg.github.io/portfolo/보인중.JPG');
   background-size:100% 120%;
@@ -288,7 +288,6 @@ tr {
 
   opacity:0.7;
 }
-
 .school4 li {
   background-image:url('https://jihunsg.github.io/5/대전대/32.jpg');
   background-size:100% 120%;
@@ -305,7 +304,6 @@ tr {
   z-index:1;
   color:rgba(0, 0, 0, 0);
 }
-
 .school2 li:hover {
   color:rgba(0, 0, 0, 0);
 
@@ -324,7 +322,6 @@ transform:scale(1.5);
   z-index:1;
 
 }
-
 .school4 li:hover {
   color:rgba(0, 0, 0, 0);
   
@@ -334,6 +331,12 @@ transform:scale(1.5);
   z-index:1;
   position:relative;
  }
+ 
+
+ 
+
+
+
 </style> 
 
 
@@ -722,7 +725,7 @@ document.getElementById("Name2").style.display='none';
 document.getElementById("Name3").style.display='none';
 
 document.getElementById("Name5").style.display='none';
-
+//document.getElementById("JJ").style.display='none';
 document.getElementById("school").style.display='none';
 document.getElementById("main").style.display='none';
   document.getElementById("timex").style.display='none';
@@ -790,7 +793,7 @@ document.getElementById("Name2").style.display='none';
 document.getElementById("Name3").style.display='block';
 
 document.getElementById("Name5").style.display='none';
-
+//document.getElementById("JJ").style.display='none';
 document.getElementById("school").style.display='none';
 	document.getElementById("main").style.display='none';
   document.getElementById("timex").style.display='block';
@@ -937,7 +940,7 @@ document.getElementById("Name2").style.display='block';
 document.getElementById("Name3").style.display='none';
 
 document.getElementById("Name5").style.display='none';
-
+//document.getElementById("JJ").style.display='none';
 document.getElementById("school").style.display='none';
 document.getElementById("main").style.display='none';
 	document.getElementById("timexx").style.display='none';
@@ -977,11 +980,10 @@ document.getElementById("Name").style.display='none';
 document.getElementById("Name1").style.display='none';
 document.getElementById("Name2").style.display='none';
 document.getElementById("Name3").style.display='none';
-
 document.getElementById("Name5").style.display='block';
 
 	document.getElementById("school").style.display='block';
-  
+  //document.getElementById("JJ").style.display='none';
   document.getElementById("timexx").style.display='none';
 	document.getElementById("timexx1").style.display='none';
 	document.getElementById("timexx2").style.display='none';
@@ -1005,6 +1007,9 @@ document.getElementById("Name5").style.display='block';
   document.getElementById("div_13").style.display='none';
 }
 
+
+
+
 </script>
 
 <title> portfolio</title></head>
@@ -1021,7 +1026,6 @@ C++
 <header id="Name3" style="font-size:400%; display:none;">
 시간표
 </header>
-
 <header id="Name5" style="font-size:400%; display:none;">
 학력
 </header>
@@ -1041,21 +1045,12 @@ C++
     </h3>
 </div>
   <div id="contents2" style="transition:all 1s; position:relative; z-index:1;" class="contents">
-    <h3 id="contents6" style="display:none;">INFORMATION
-      <ul>
-        <li onclick="javascript:timex();">시간표</li>
-       
-        <li onclick="javascript:school();">학력</li>
-      </ul>
+    <h3 id="contents6" style="display:none;"  onclick="javascript:timex();">TIMETABLE
     </h3>
 </div>
   <div id="contents3" style=" transition:all 1s; position:relative; z-index:1;" class="contents">
-    <h3 id="contents7" style="display:none;">blabla
-      <ul > 
-        <li>HTML</li>
-        <li>C++</li>
-        <li>JAVA</li>
-      </ul>
+    <h3 id="contents7" style="display:none;" onclick="javascript:school();">INFORMATION
+      
     </h3>
 </div>
 
@@ -1402,24 +1397,29 @@ C++
 
 <div id="school" class="student">
 <div >
+개롱초등학교
   <ul class="school1">
-    <li>개롱초등학교<br/><br/>졸업</li></ul>
+    <li><br/>졸업<br/>　</li></ul>
   </div>
 <div  >
+ 보인중학교
   <ul class="school2">
-    <li>보인중학교<br/><br/>졸업</li>
+    <li><br/>졸업<br/>　</li>
   </ul>
 </div>
 <div  >
+  방산고등학교 
   <ul class="school3">
-    <li>방산고등학교<br/><br/>졸업</li>
+    <li><br/>졸업<br/>　</li>
   </ul>
 </div>
 <div >
+대전대학교
   <ul class="school4">
-    <li>대전대학교<br/><br/>2학년 재학중</li>
+    <li><br/>2학년 재학중<br/>　</li>
   </ul>
 </div>
 </div>
+
 </body>
 </html>
