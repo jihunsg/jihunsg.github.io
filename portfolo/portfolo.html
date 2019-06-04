@@ -7,8 +7,8 @@
 @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
 *{box-sizing:border-box; padding:0; margin:0;  height:100%;  width:100%; }
 body{
-background-color:lightyellow;
-background-image:url('https://jihunsg.github.io/portfolo/배경.png');
+background-color:#EEEEEF;
+background-image:url('https://jihunsg.github.io/portfolo/배경2.png');
 background-size: 200px;
 background-position:50% 70%;
 background-repeat:no-repeat;
@@ -33,7 +33,7 @@ header{
   
   }
 .contents h3{
-  background:#FFFFBE;
+  background:#FFC864;
   cursor:pointer;
   color:#EEEEEF;
   box-shadow:3px 3px 3px gray;
@@ -222,10 +222,11 @@ tr {
   left:30%;
   height:50%;
   width:40%;
-  background-color:#00000E;
+  background-color:gray;
   box-sizing:border-box;
   border-radius:100%;
-  opacity:0.3;
+  opacity:0.2;
+  box-shadow:2px 2px 2px gray;
   transition : all 0.5s;
   vertical-align:center;
 }
@@ -664,22 +665,35 @@ document.getElementById("main").style.display='none';
   document.getElementById("HTML12").style.background='lightyellow';
   document.getElementById("HTML13").style.background='lightyellow';
 }
+
 function timexx(){
 	document.getElementById("timexx").style.display='block';
   document.getElementById("timexx1").style.display='none';
   document.getElementById("timexx2").style.display='none';
+  
+  document.getElementById("timexxx").style.background='#EEEEEF';
+  document.getElementById("timexxx1").style.background='lightyellow';
+  document.getElementById("timexxx2").style.background='lightyellow';
+  
 }
 function timexx1(){
   document.getElementById("timexx1").style.display='block';
   document.getElementById("timexx").style.display='none';
   document.getElementById("timexx2").style.display='none';
+  
+  document.getElementById("timexxx1").style.background='#EEEEEF';
+  document.getElementById("timexxx").style.background='lightyellow';
+  document.getElementById("timexxx2").style.background='lightyellow';
 }
 function timexx2(){
   document.getElementById("timexx2").style.display='block';
   document.getElementById("timexx1").style.display='none';
   document.getElementById("timexx").style.display='none';
+  
+  document.getElementById("timexxx2").style.background='#EEEEEF';
+  document.getElementById("timexxx1").style.background='lightyellow';
+  document.getElementById("timexxx").style.background='lightyellow';
 }
-
 function timex(){
 	document.getElementById("main").style.display='none';
   document.getElementById("timex").style.display='block';
@@ -705,7 +719,12 @@ function timex(){
   document.getElementById("div_11").style.display='none';
   document.getElementById("div_12").style.display='none';
   document.getElementById("div_13").style.display='none';
+  
+  document.getElementById("timexxx").style.background='lightyellow';
+  document.getElementById("timexxx1").style.background='lightyellow';
+  document.getElementById("timexxx2").style.background='lightyellow';
 }
+
 function contents(){
 	document.getElementById("contents").style.display='block';
   document.getElementById("contents1").style.display='block';
@@ -814,7 +833,6 @@ function report6(){
   document.getElementById("C++5").style.background='lightyellow';
   document.getElementById("C++1").style.background='lightyellow';
 }
-
 function C(){
 document.getElementById("main").style.display='none';
 	document.getElementById("timexx").style.display='none';
@@ -846,6 +864,7 @@ document.getElementById("main").style.display='none';
   document.getElementById("C++5").style.background='lightyellow';
   document.getElementById("C++6").style.background='lightyellow';
 }
+
 function JAVA(){
 document.getElementById("main").style.display='none';
 document.getElementById("timexx").style.display='none';
@@ -876,9 +895,7 @@ document.getElementById("timexx2").style.display='none';
   document.getElementById("div_13").style.display='none';
 }
 
-function main(){
-document.getElementById("main").style.display='block';
-}
+
 
 </script>
 
@@ -903,17 +920,17 @@ PORTFOLIO
     </h3>
 </div>
   <div id="contents2" style="transition:all 1s; position:relative; z-index:1;" class="contents">
-    <h3 id="contents6" style="display:none;">INFORMATION 
+    <h3 id="contents6" style="display:none;">INFORMATION
       <ul>
         <li onclick="javascript:timex();">시간표</li>
         <li>자격증</li>
-        <li></li>
+        <li>경력</li>
       </ul>
     </h3>
 </div>
   <div id="contents3" style=" transition:all 1s; position:relative; z-index:1;" class="contents">
-    <h3 id="contents7" style="display:none;">실습 
-      <ul >
+    <h3 id="contents7" style="display:none;">blabla
+      <ul > 
         <li>HTML</li>
         <li>C++</li>
         <li>JAVA</li>
@@ -929,9 +946,9 @@ PORTFOLIO
 </div>
 <div id="timex" class="timex" style="display:none;">
   <ul>
-    <li style="" onclick="javascript:timexx1();">1학년 1학기</li>
-    <li onclick="javascript:timexx2();">1학년 2학기</li>
-    <li onclick="javascript:timexx();">2학년 1학기</li>
+    <li id="timexxx1" style="" onclick="javascript:timexx1();">1학년 1학기</li>
+    <li id="timexxx2" onclick="javascript:timexx2();">1학년 2학기</li>
+    <li id="timexxx" onclick="javascript:timexx();">2학년 1학기</li>
     <li href="#">2학년 2학기</li>
     <li href="#">3학년 1학기</li>
     <li href="#">3학년 2학기</li>
