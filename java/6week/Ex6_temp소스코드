@@ -1,0 +1,13 @@
+package org.javaro.lecture;
+
+public class Ex6_FC {
+	public static void main(String[] args) {
+		System.out.println("18김지훈 20191010 함수");
+		float tempC = temp_convert(70.0f);
+		System.out.println("tempC = "+tempC+" C");
+	}
+	static float temp_convert(float farenheit) {
+		float celsius=(farenheit-32)*(5.0f/9.0f);
+		return celsius;
+	}
+}
