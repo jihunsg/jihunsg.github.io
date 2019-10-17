@@ -1,0 +1,113 @@
+절차 프로그램
+package org.javaro.lecture;
+
+public class Ex7_jur {
+	public static void main(String[] args) {
+		System.out.println("18김지훈 20191016 객체 절차프로그램");
+		int a = 10; int b = 20; int c; double d;
+		System.out.println("a * b = "+(a*b));
+		c = a * b;
+		System.out.println("4각형 면적 c = "+ c);
+		d = 0.5 * (double)a * (double)b;
+		System.out.println("3각형 면적 d = "+ d);
+	}
+}
+
+
+
+
+함수프로그램
+package org.javaro.lecture;
+
+public class Ex7_fx {
+	public static void main(String[] args) {
+		System.out.println("18김지훈 20191016 객체 함수프로그램");
+		double x = 10.0, y = 20.0;
+		int c = fn_mult((int)x, (int)y);
+		System.out.println("x * y = "+c);
+		double d = fn_area(x, y);
+		System.out.println("4각형 면적 d = "+d);
+		double e = fn_area2(x, y);
+		System.out.println("3각형 면적 e = "+e);
+		
+	}
+	static int fn_mult(int a, int b) {
+		return a*b;
+	}
+	static double fn_area(double a, double b) {
+		return a*b;
+	}
+	static double fn_area2(double a, double b) {
+		return 0.5 * a*b;
+	}
+}
+
+
+
+객체프로그램
+package org.javaro.lecture;
+
+public class Ex7_G {
+	public static void main(String[] args) {
+		System.out.println("18김지훈 20191016 객체프로그램");
+		fn result = new fn();
+		result.x = 10.0;
+		result.y = 20.0;
+		int mult = (int)result.fn_mult();
+		System.out.println("x*y = "+mult);
+		double area = result.fn_area();
+		System.out.println("4각형 면적 = "+area);
+		double area2 = result.fn_area2();
+		System.out.println("3각형 면적 = "+area2);
+	}
+}
+class fn{
+	double x,y;
+	public double fn_mult() {
+		return x*y;
+	}
+	public double fn_area() {
+		return x*y;
+	}
+	public double fn_area2() {
+		return 0.5*x*y;
+	}
+}
+
+
+자바빈 프로그램
+package org.javaro.lecture;
+
+public class Ex7_javabin {
+	public static void main(String[] args) {
+		System.out.println("18김지훈 20191016 객체 자바빈프로그램");
+		fn2 result = new fn2();
+		result.setX(10.0); result.setY(20.0);
+		double mult = result.mult();
+		System.out.println("곱하기 = "+mult);
+		double area = result.area();
+		System.out.println("4각형 면적 = "+area);
+		double area2 = result.area2();
+		System.out.println("3각형 면적 = "+area2);
+	}	
+}
+class fn2{
+	private double x, y;
+
+	public void setX(double x) {this.x = x;}
+	public double getX() {return x;}
+
+	public void setY(double y) {this.y = y;}
+	public double getY() {return y;}
+	
+	public double mult() {
+		return this.x*this.y;
+	}
+	public double area() {
+		return this.x*this.y;
+	}
+	public double area2() {
+		return 0.5*this.x*this.y;
+	}
+}
+
